@@ -1,0 +1,65 @@
+ul.topnav {
+    width: 70%;
+    float: right;
+    text-align: right;
+    list-style-type: none;
+    padding: 15px 0;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+ul.topnav li {
+    display: inline-block;
+}
+
+ul.topnav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1em;
+}
+
+ul.topnav li a:hover {
+    color: #444;
+}
+
+ul.topnav li.icon {
+    display: none;
+}
+
+ul.topnav li.active a {
+    color: #444;
+}
+
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+    ul.topnav li.icon {
+        float: right;
+        display: block;
+        margin-top: -6px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+  }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+  }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+  }
+}

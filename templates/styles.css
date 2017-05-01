@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* default view */
+
+/* home */
+
+#one {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    background: rgba(0,0,0,.5);
+}
+
+#two {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    top: 0;
+}
+
+#one img#me {
+    width: 4.5%;
+    padding: 10px;
+    float: left;
+    margin-left: 4%;
+}
+
+#two img#me {
+    width: 4.5%;
+    padding: 10px;
+    float: left;
+    margin-left: 4%;
+}
+
+h1#me2 {
+    width: 15%;
+    float: left;
+    padding-top: 15px;
+    
+}
+
+#two h1#me2 {
+    width: 15%;
+    float: left;
+    padding-top: 15px;
+    
+}
+
+.parallax-window {
+    min-height: 750px;
+    background: transparent;
+}
+
+div .samp{
+    width: 20%;
+    float: left;
+    margin: 45% 0 0 40%;
+}
+
+.section {
+    width: 90%;
+    margin: auto;
+    padding: 2% 5%;
+    background-color: #fff; 
+    overflow: hidden;
+}
+
+.section p {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 2%;
+}
+
+.footerAll {
+    width: 100%;
+    background-color: #000;
+    clear: both;
+}
+
+.footerAll small, a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerNav { 
+    width: 8%;
+    padding: 1%;
+    left: 0;
+}
