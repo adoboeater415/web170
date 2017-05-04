@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* CSS Document*/
+
+/*
+Theme Name: Demo Theme for Web 170 Spring 2017
+Theme URI: https://github.com/adoboeater415/web170/tree/master/templates
+Author: Pierre Dayag
+Author URI: http;//pierredayag.com
+Description: This is my Demo Theme for my Web 170 class in the Spring Quarter 2017
+Version: 42.0
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* default view */
+
+/* home */
+
+ul.topnav {
+    width: 70%;
+    float: right;
+    text-align: right;
+    list-style-type: none;
+    padding: 15px 0;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+ul.topnav li {
+    display: inline-block;
+}
+
+ul.topnav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1em;
+}
+
+ul.topnav li a:hover {
+    color: #444;
+}
+
+ul.topnav li.icon {
+    display: none;
+}
+
+ul.topnav li.active a {
+    color: #444;
+}
+
+#one {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    background: rgba(0,0,0,.5);
+}
+
+#two {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    top: 0;
+}
+
+#one img#me {
+    width: 4.5%;
+    padding: 10px;
+    float: left;
+    margin-left: 4%;
+}
+
+#two img#me {
+    width: 4.5%;
+    padding: 10px;
+    float: left;
+    margin-left: 4%;
+}
+
+h1#me2 {
+    width: 15%;
+    float: left;
+    padding-top: 15px;
+    
+}
+
+#two h1#me2 {
+    width: 15%;
+    float: left;
+    padding-top: 15px;
+    
+}
+
+.parallax-window {
+    min-height: 750px;
+    background: transparent;
+}
+
+div .samp{
+    width: 20%;
+    float: left;
+    margin: 45% 0 0 40%;
+}
+
+.section {
+    width: 90%;
+    margin: auto;
+    padding: 2% 5%;
+    background-color: #fff; 
+    overflow: hidden;
+}
+
+.section p {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 2%;
+}
+
+.footerAll {
+    width: 100%;
+    background-color: #000;
+    clear: both;
+}
+
+.footerAll small, a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerNav { 
+    width: 8%;
+    padding: 1%;
+    left: 0;
+}
+
+/* responsive smaller screen */
+
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+    ul.topnav li.icon {
+        float: right;
+        display: block;
+        margin-top: -6px;
+    }
+}
+
+/* responsive smaller screen */
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+  }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+  }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+  }
+}
