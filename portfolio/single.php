@@ -9,7 +9,7 @@
                 <small>Posted on <?php the_time('F, j, y'); ?> by Pierre D. in <?php the_category(); ?>.</small>
                 <?php the_content(); ?>
                 <?php endwhile; endif ?>
-                <small>page.php</small>
+                <small>single.php</small>
                 
             </div>
             <!-- main content ends -->
