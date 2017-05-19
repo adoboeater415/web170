@@ -35,7 +35,7 @@
         <div id="header">
         
             <!-- display logo and maybe name -->
-            <a href="#">
+            <a href="<?php echo get_option('home'); ?>">
                 <img id="logo" src="<?php bloginfo('template_directory'); ?>/images/mylogo3.png" alt="Pierre D."><h1>Pierre D.</h1>
             </a>
             <!-- logo ends -->
