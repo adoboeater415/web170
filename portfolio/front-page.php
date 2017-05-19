@@ -1,7 +1,7 @@
 <?php get_header(); ?>
            
            <!-- main content -->
-            <div id="content">
+            <div id="widgets">
             
                <!-- this loop only works if I created a WordPress content -->
                 <?php if (have_posts()) : while(have_posts()) : the_post(); ?>

@@ -27,9 +27,11 @@
         </script>
         <!-- end flex -->
         
+        
+        
     </head>
     
-    <body>
+    <body <?php body_class(); ?> >
 
         <!-- header starts here -->
         <div id="header">
