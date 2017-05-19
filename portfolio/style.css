@@ -79,6 +79,15 @@ a {
     display: none;
 }
 
+/*this will be the standard style for all p tags and header tags
+unless I declare otherwise*/
+#content p h1 h2 h3 {
+	padding: 15px !important;
+}
+
+
+/*end of text style*/
+
 #container {
     width: 90%;
     margin: 0 auto;
