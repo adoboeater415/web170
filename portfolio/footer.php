@@ -7,7 +7,11 @@
             <p>&copy;2017 <a href="#">Pierre D.</a> All rights reserved.</p>
             
         </div>
-        <!-- enf footer -->
+        <!-- end footer -->
+        
+        <!-- wp footer function -->
+        <?php wp_footer(); ?>
+        <!-- end of wp footer function -->
         
     </body>
 

@@ -27,7 +27,9 @@
         </script>
         <!-- end flex -->
         
-        
+        <!-- wp header function -->
+        <?php wp_head(); ?>
+        <!-- end of wp header function -->
         
     </head>
     
@@ -42,13 +44,23 @@
             </a>
             <!-- logo ends -->
             
-            <!-- nav div starts here -->
+            <!-- nav div starts here 
             <div id="navigation">
-            
-                <?php wp_nav_menu(array('theme_location' => 'main-menu', 'container' => 'div', 'container_id' => 'navigation',)); ?>
-                
+               	<ul id="navigation">
+               	<li><a href="#">About</a></li>
+               	<li><a href="#">Portfolio</a></li>
+               	<li><a href="#">Blog</a></li>
+               	<li><a href="#">Conact</a></li>
+				</ul>
             </div>
-            <!-- nave div ends here -->
+            nave div ends here -->
+            
+            <!-- wp menu -->
+            <?php wp_nav_menu(array('theme_location' => 'main-menu', 'container' => 'div', 'container_id' => 'navigation') ); ?>
+                
+            <!-- <?php wp_nav_menu(); ?> -->
+            <!-- end wp menu -->
+            
             
         </div>
         <!-- header ends here -->
