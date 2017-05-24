@@ -24,21 +24,21 @@
 				   <?php
 				   
 				   if(is_page()) { // if on page
-					   
-				   	if($post->post_parent) { // if this page has a parent
+
+					   if($post->post_parent) { // if this page has a parent
 						
-					wp_list_pages(array('title_li' => '', 'child_of' => $post->post_parent)); // this will list the children
+						   wp_list_pages(array('title_li' => '', 'child_of' => $post->post_parent)); // this will list the children
+										
+					   } else { // if on parent page
+						
+						   wp_list_pages(array('title_li' => '', 'child_of' => $post->ID));
 					
-					} else { // if on parent page
-						
-						wp_list_pages(array('title_li' => '', 'child_of' => $post->ID));
-						
-					}
+					   }
 				   
 				   } else { // if on a different page
 				   
-				   	wp_list_categories(array('title_li' => 'Blog')); // blog categories
-				   
+					   wp_list_categories(array('title_li' => 'Blog')); // blog categories
+					   
 				   }
 					   
 				   ?>

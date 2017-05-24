@@ -95,7 +95,7 @@ unless I declare otherwise*/
 
 #container {
     width: 90%;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 #content {
@@ -103,9 +103,31 @@ unless I declare otherwise*/
     float: left;
 }
 
+/* #hello {
+	width: 100%;
+	background-image: url(/*images/me.png*//*) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	overflow: hidden;
+}
+
+#hello h2 {
+	width: 100%;
+	text-align: center;
+	padding-top: 500px;
+	padding-bottom: 500px;
+} */
+
 #side {
     width: 20%;
-    float: right
+    float: right;
+}
+
+#widgets {
+	width: 90%;
+	margin: 0 auto;
 }
 
 #footer {

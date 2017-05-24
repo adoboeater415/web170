@@ -1,9 +1,9 @@
 <?php get_header(); ?>
            
-           <!-- main content -->
+          	<!-- main content -->
             <div id="content">
             
-               <!-- this loop only works if I created a WordPress content -->
+              	<!-- this loop only works if I created a WordPress content -->
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     			<article id="article-<?php the_ID(); ?>" class="article">
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>				
