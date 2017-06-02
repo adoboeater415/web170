@@ -1,5 +1,5 @@
 			<!-- side content -->
-            <div id="side">
+            <div id="sub-navigation" class="widget">
                
                <h2>
                		<?php 
@@ -43,6 +43,16 @@
 					   
 				   ?>
                </ul>
+               
+               <?php if(get_post_meta($post->ID, 'quote',  true)) : ?>
+               <!-- pull quote -->
+               <div id="pull-quote">
+               	
+               		<blockquote><?php echo get_post_meta($post->ID, 'quote', true); ?></blockquote>
+               	
+               </div>
+               <!-- end of pull quote -->
+                <?php endif; ?>
                 
             </div>
             <!-- side content ends -->

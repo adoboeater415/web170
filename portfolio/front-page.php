@@ -18,11 +18,11 @@
             <div id="widgets">
             
               	<!-- left side section -->
-                <section id="widgets-item">
+                <section class="widget-item">
                 
                 	<h2>Left Side Awesomeness</h2>
                 	
-	                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	                <?php if (have_posts()) : while (have_posts()) : the_post(); //first loop ?>
 	                
 	                <article id="article-<?php the_ID(); ?>" class="article">
 	                	<?php the_content(); ?>
@@ -36,15 +36,15 @@
             	<!-- left side section ends -->
             
             	<!-- right side section -->
-            	<section id="widgets-item">
+            	<section class="widget-item">
             	
             		<h2>Right Side Awesomeness</h2>
             		
 					<ul>
 						
-						<?php rewind_posts(); ?>
+						<?php rewind_posts(); // end first loop ?>
 						
-						<?php query_posts(array('category_name' => 'news', 'posts_per_page' => 4 )); ?>
+						<?php query_posts(array('category_name' => 'news', 'posts_per_page' => 4 )); // second loop ?>
 						
 						<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 						
@@ -61,7 +61,7 @@
 					
 						<ul>
 							
-							<?php rewind_posts(); ?>
+							<?php rewind_posts(); // end second loop ?>
 							
 							<?php query_posts(array('category_name' => 'articles', 'posts_per_page' => 4)); ?>
 							

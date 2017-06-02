@@ -84,6 +84,16 @@ a {
     display: none;
 }
 
+#sub-navigation li.categories {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#sub-navigation li.cat-item {
+	list-style-type: none;
+	text-decoration: none;
+}
+
 /*this will be the standard style for all p tags and header tags
 unless I declare otherwise*/
 #content p h1 h2 h3 {
@@ -101,6 +111,26 @@ unless I declare otherwise*/
 #content {
     width: 70%;
     float: left;
+}
+
+#widgets {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#widgets section.widget-item {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#content article.post-excerpt {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+#content img.size-thumbnail {
+	float: left;
+	margin-right: 20px;
 }
 
 /* #hello {
@@ -123,11 +153,6 @@ unless I declare otherwise*/
 #side {
     width: 20%;
     float: right;
-}
-
-#widgets {
-	width: 90%;
-	margin: 0 auto;
 }
 
 #footer {
