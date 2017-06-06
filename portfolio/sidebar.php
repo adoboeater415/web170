@@ -17,9 +17,6 @@
 				   ?>
                </h2>
                
-               <p>It's all about 'em CHICKEN NUGGETS!</p>
-               
-               
                <ul>
 				   <?php
 				   
@@ -46,13 +43,17 @@
                
                <?php if(get_post_meta($post->ID, 'quote',  true)) : ?>
                <!-- pull quote -->
-               <div id="pull-quote">
+               <div id="pull-quote" class="widget">
                	
                		<blockquote><?php echo get_post_meta($post->ID, 'quote', true); ?></blockquote>
                	
                </div>
                <!-- end of pull quote -->
                 <?php endif; ?>
+                
+                <!-- widgets -->
+                <?php dynamic_sidebar(1); ?>
+                <!-- widgets ends here -->
                 
             </div>
             <!-- side content ends -->

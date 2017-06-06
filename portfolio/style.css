@@ -94,6 +94,11 @@ a {
 	text-decoration: none;
 }
 
+#sub-navigation ul li {
+	list-style-type: none;
+	text-decoration: none;
+}
+
 /*this will be the standard style for all p tags and header tags
 unless I declare otherwise*/
 #content p h1 h2 h3 {
@@ -119,8 +124,10 @@ unless I declare otherwise*/
 }
 
 #widgets section.widget-item {
-	width: 50%;
+	width: 40%;
 	margin: 0 auto;
+	float: left;
+	padding-right: 2%;
 }
 
 #content article.post-excerpt {
